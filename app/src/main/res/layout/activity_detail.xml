@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <EditText
+                android:id="@+id/amountEditTextDetailActivity"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:hint="Ex. 9.99"
+                android:inputType="numberSigned|numberDecimal"
+                android:layout_alignParentRight="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/amountEditTextDetailActivity"
+                android:gravity="center"
+                android:text="₹"
+                android:textColor="@color/green"
+
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@+id/amountEditTextDetailActivity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/amount"
+                android:textColor="@color/black_overlay"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/dateEditTextDetailActivity"
+
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:hint="YYYY-MM-DD"
+                android:inputType="datetime"
+                android:layout_alignParentRight="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textColor="@color/black_overlay"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/tagEditTextDetailActivity"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:hint="Ex. Clothing"
+                android:inputType="textCapWords|textShortMessage"
+                android:visibility="visible"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="Tag"
+                android:textColor="@color/black_overlay"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/repeatSpinnerDetailActivity"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Ex. Clothing"
+                android:visibility="visible"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="Repeat"
+                android:textColor="@color/black_overlay"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Update Entry"
+            android:textColor="@color/green"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+
+        <!--
+        android:onClick="showConfirmPopUp"
+        -->
+
+    </LinearLayout>
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/deleteSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:elevation="4dp"
+        app:text_size="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:slider_icon="@drawable/ic_delete_black_24dp"
+        app:text="Swipe To Delete" />
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textSize="24sp"
+        app:cardBackgroundColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="25dp"
+            android:text="Update"
+            android:textColor="@color/black_overlay"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="delete this entry"
+        android:textSize="30sp"
+        android:textColor="@color/deficit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

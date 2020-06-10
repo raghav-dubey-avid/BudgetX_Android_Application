@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BudgetX</string>
+    <string name="okay"><u>Okay</u></string>
+    <string name="amount"><font fgcolor='#8B0000'>*</font>Amount</string>
+    <string name="date"><font fgcolor='#8B0000'></font> Date</string>
+    <string name="location"><font fgcolor='#8B0000'></font> Location</string>
+    <string name="details"><font fgcolor='#8B0000'></font> Details</string>
+    <string name="info">Fields marked with <font fgcolor='#8B0000'>*</font> are required.\n\nYou may enter negative numbers in amount field, which will act as a debit entry rather than a credit entry.\n\nThe default date is now.\n\nThe default tag is \"No Tag\". Please create
+    tags in the \"Tags\" activity before using them to create a new entry.</string>
+    <string name="about">This app was developed by Raghavendra Dubey, Ritwik Mohapatra, Sourav and Nirbhoy. It was developed with Android Studio.
+        It\'s been tested on: Pixel, Pixel2XL, OnePlus 5, S7 Edge, S8, Nexus 5, and Nexus 4.
+    </string>
+    <string name="version">App Version 1.0</string>
+    <string name="title"><font fgcolor='#8B0000'>*</font>Title</string>
+    <string name="color"><font fgcolor='#8B0000'>*</font>Color</string>
+
+    <string-array name="times_array">
+        <item>24 Hours</item>
+        <item>3 Days</item>
+        <item>1 Week</item>
+        <item>2 Weeks</item>
+        <item>1 Month</item>
+        <item>3 Months</item>
+        <item>1 Year</item>
+    </string-array>
+    <string-array name="repeat_array">
+        <item>Never</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+    <string name="title_activity_tag_detail">TagDetailActivity</string>
+
+</resources>
