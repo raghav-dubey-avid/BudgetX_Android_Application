@@ -11,7 +11,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-// 1-> SQLite 2-> PieChart and PieData set library 3-> Androidx Library 4-> Petrov's ColorPicker
+
 public class MyDBHandler extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;

@@ -27,7 +27,6 @@ import com.ncorti.slidetoact.SlideToActView;
 import org.w3c.dom.Text;
 
 import petrov.kristiyan.colorpicker.ColorPicker;
-import yuku.ambilwarna.AmbilWarnaDialog;
 
 public class TagDetailActivity extends AppCompatActivity {
 
